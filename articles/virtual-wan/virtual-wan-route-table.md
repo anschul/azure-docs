@@ -110,7 +110,7 @@ $routeTable = New-AzureRmVirtualHubRouteTable -Route @($route1)
 Commit the changes into the virtual hub.
 
 ```powershell
-Set-AzureRmVirtualHub -VirtualWanId $virtualWan.Id -ResourceGroupName "testRG" -Name "westushub” -RouteTable $routeTable
+Update-AzureRmVirtualHub -VirtualWanId $virtualWan.Id -ResourceGroupName "testRG" -Name "westushub” -RouteTable $routeTable
 ```
 
 ## <a name="cleanup"></a>Clean up resources
